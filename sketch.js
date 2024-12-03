@@ -1,6 +1,11 @@
+let p = {x:400, y:300}; 
+let pSize = 20;
+let speed = 5;
+let theta = 4;
+
 function setup() {
     createCanvas(innerWidth, innerHeight);
-    noLoop();
+    // noLoop();
     rectMode(CENTER);
 }
 
@@ -76,9 +81,20 @@ function setup() {
 
 
 
+// function draw() {
+//     background(255, 255, 255);
+//     stroke(0, 185, 160, 10)
+//     fill(0, 185, 160, 40)
+//     arc(width/2, height/2, 400, 400, 0, random(TAU))
+// }
+
+
 function draw() {
-    background(255, 255, 255);
+    background(220);
     stroke(0, 185, 160, 10)
-    fill(0, 185, 160, 40)
-    arc(width/2, height/2, 400, 400, 0, random(TAU))
+    fill(0, 185, 160)
+    p.x = cos(theta) * speed;
+    p.y = sin(theta) * speed;
+    circle(p.x, p.y, pSize);
 }
+
