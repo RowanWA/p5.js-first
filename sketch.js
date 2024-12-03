@@ -14,43 +14,71 @@ function setup() {
 //     triangle(400, 375, 475, 650, 325, 650)
 //   }
 
+// function draw() {
+//     background(0, 25, 15);
+//     noFill()
+//     stroke(0, 185, 160, 10)
+//     fill(0, 185, 160, 40)
+//     const size = 15;
+// // let x,y;
+
+//     for(let i = 0; i < 20000; i++){
+//         x = randomGaussian (width/2, 300);
+//         y = randomGaussian (height/2, 300);
+//         fill(0, 85, 60, 40)
+//         circle(x, y, size);
+//         x = randomGaussian (width, 200);
+//         y = randomGaussian (height, 200);
+//         fill(0, 5, 5, 75)
+//         circle(x, y, size);
+//         x = randomGaussian (width, 200);
+//         y = randomGaussian (height-height, 200);
+//         fill(0, 5, 5, 75)
+//         circle(x, y, size);
+//         x = randomGaussian (width-width, 200);
+//         y = randomGaussian (height, 200);
+//         fill(0, 5, 5, 75)
+//         circle(x, y, size);
+//         x = randomGaussian (width-width, 200);
+//         y = randomGaussian (height-height, 200);
+//         fill(0, 5, 5, 75)
+//         circle(x, y, size);
+//         x = randomGaussian (width-width, 50);
+//         y = randomGaussian (height-height, height);
+//         fill(0, 5, 5, 100)
+//         circle(x, y, size);
+//         x = randomGaussian (width, 50);
+//         y = randomGaussian (height-height, height);
+//         fill(0, 5, 5, 100)
+//         circle(x, y, size);
+//         x = randomGaussian (width, width);
+//         y = randomGaussian (height-height, 100);
+//         fill(0, 5, 5, 150)
+//         circle(x, y, size);
+//         x = randomGaussian (width, width);
+//         y = randomGaussian (height, 100);
+//         fill(0, 5, 5, 150)
+//         circle(x, y, size);
+//         x = randomGaussian (width/2, 225);
+//         y = randomGaussian (height/2, 125);
+//         fill(255, 255, 255, 60)
+//         circle(x, y, size);
+//         x = randomGaussian (width/2, 85);
+//         y = randomGaussian (height/2, 85);
+//         fill(0, 0, 0, 100)
+//         circle(x, y, size);
+//         x = randomGaussian (width/2, 20);
+//         y = randomGaussian (height/2, 60);
+//         fill(170, 0, 170, 60)
+//         circle(x, y, size);
+//     }
+// }
+
+
+
 function draw() {
-    background(0, 25, 15);
-    noFill()
-    // stroke(255, 0, 255, 30)
+    background(255, 255, 255);
     stroke(0, 185, 160, 10)
-    // rect(500, 500, 200, 200)
-    // let c = map(mouseY, 0, height, 0, 255)
-    // fill(0, c, 125)
     fill(0, 185, 160, 40)
-    // let w = map(mouseX, 0, width, 0, 500)
-    // rect(500, 500, w, w)
-    const size = 15;
-    // for(let i = 0; i < 60000; i++){
-    //     let x = random (width);
-    //     let y = random (height);
-    //     circle(x, y, size);
-    // }
-
-let x,y;
-
-    for(let i = 0; i < 20000; i++){
-        x = randomGaussian (width/2, 300);
-        y = randomGaussian (height/2, 300);
-        fill(0, 85, 60, 40)
-        circle(x, y, size);
-        x = randomGaussian (width/2, 225);
-        y = randomGaussian (height/2, 125);
-        fill(255, 255, 255, 60)
-        circle(x, y, size);
-        x = randomGaussian (width/2, 85);
-        y = randomGaussian (height/2, 85);
-        fill(0, 0, 0, 100)
-        circle(x, y, size);
-        x = randomGaussian (width/2, 20);
-        y = randomGaussian (height/2, 60);
-        fill(170, 0, 170, 60)
-        circle(x, y, size);
-    }
+    arc(width/2, height/2, 400, 400, 0, random(TAU))
 }
-
